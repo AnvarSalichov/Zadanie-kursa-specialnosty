@@ -27,3 +27,19 @@ int GetCount(string[] array)
 return counter;
 }
 
+string[] FillResultArray (int counter, string[] array)
+{   
+    string[] resultArray = new string[counter]; 
+    int j = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            resultArray[j] = array[i];
+            j++;
+        }
+    }
+    return resultArray;
+}
+
+
