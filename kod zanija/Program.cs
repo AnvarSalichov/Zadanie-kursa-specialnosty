@@ -27,7 +27,7 @@ int GetCount(string[] array)
 return counter;
 }
 
-string[] FillResultArray (int counter, string[] array)
+string[] FillResult (int counter, string[] array)
 {   
     string[] resultArray = new string[counter]; 
     int j = 0;
@@ -42,4 +42,6 @@ string[] FillResultArray (int counter, string[] array)
     return resultArray;
 }
 
-
+int counter = GetCount(array);
+string [] resultArray = FillResult(counter, array);
+Console.WriteLine(String.Join(" ", resultArray));
